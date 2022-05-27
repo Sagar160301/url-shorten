@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
   try {
     // let url = await Url.findOne({ name: req.params.name }).lean().exec();
 
-    res.redirect(`http://127.0.0.1:5500/index.html`);
+    res.send({ name: "sagar" });
   } catch (error) {
     return error;
   }
