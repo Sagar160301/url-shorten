@@ -7,7 +7,7 @@ router.post("/", async (req, res) => {
     let url = await Url.create(req.body);
     return res
       .status(201)
-      .send({ url: `https://my-sagar-url-shorten.herokuapp.com/${url.name}` });
+      .send({ url: `https://masai-url-shorten.herokuapp.com/${url.name}` });
   } catch (error) {
     return res.status(400).send({ message: error.message });
   }
